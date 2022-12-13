@@ -40,6 +40,11 @@ class ArticleResults extends Equatable {
         "articles": List<dynamic>.from(articles.map((x) => x.toJson())),
       };
 
+  ArticleResults toEntity() {
+    return ArticleResults(
+        status: status, totalResults: totalResults, articles: articles);
+  }
+
   @override
   List<Object?> get props => [articles, totalResults, status];
 }

@@ -13,9 +13,8 @@ class ServerFailure extends Failure {
   ServerFailure({String message = 'Server Failure'}) : super(message);
 }
 
-class ConnectionErrorMessage extends Failure {
-  ConnectionErrorMessage({String message = connectionErrorMessage})
-      : super(message);
+class ConnectionFailure extends Failure {
+  ConnectionFailure({String message = connectionErrorMessage}) : super(message);
 }
 
 class DatabasesFailure extends Failure {
