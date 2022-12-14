@@ -4,6 +4,7 @@ import 'package:online_class/common/failure.dart';
 import 'package:online_class/data/models/models.dart';
 import 'package:online_class/domain/usecases/search_news.dart';
 import 'package:online_class/providerr/providers.dart';
+import 'package:rxdart/rxdart.dart';
 part 'news_search_event.dart';
 part 'news_search_state.dart';
 

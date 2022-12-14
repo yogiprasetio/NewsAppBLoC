@@ -24,3 +24,4 @@ part 'article.dart';
 part 'detail_article.dart';
 part 'web_view_detail.dart';
 part 'news_list_page.dart';
+part 'news_search.dart';
