@@ -13,6 +13,30 @@ class _NewsSearchScreenState extends State<NewsSearchScreen> {
   Widget build(BuildContext context) {
     double listItemWidth =
         MediaQuery.of(context).size.width - 2 * defaultMargin;
-    return Scaffold(body: const NewsSearchListPage());
+    return Scaffold(
+        appBar: AppBar(title: const Text('SearchArticle')),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              TextField(
+                onChanged: (query) {
+                  context.read<NewsSearchBloc>().add(OnQueryNewsChanged(query));
+                },
+                decoration: const InputDecoration(
+                    hintText: 'Search Tittle',
+                    prefixIcon: Icon(Icons.search),
+                    border: OutlineInputBorder()),
+                textInputAction: TextInputAction.search,
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+              const Text('Search Reasult'),
+              NewsSearchListPage(),
+            ],
+          ),
+        ));
   }
 }

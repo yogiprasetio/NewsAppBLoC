@@ -1,9 +1,10 @@
 import 'dart:math';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:online_class/presentation/bloc/news_search/news_search_bloc.dart';
 import 'package:online_class/shared/shared.dart';
 import 'package:provider/provider.dart';
 import 'package:supercharged/supercharged.dart';
@@ -25,3 +26,4 @@ part 'detail_article.dart';
 part 'web_view_detail.dart';
 part 'news_list_page.dart';
 part 'news_search.dart';
+part 'news_search_list_page.dart';
