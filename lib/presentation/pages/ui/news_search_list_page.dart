@@ -34,7 +34,7 @@ class NewsSearchListPage extends StatelessWidget {
           child: Text(state.message),
         );
       } else {
-        return Center(
+        return const Center(
           child: Material(
             child: Text("_______"),
           ),
@@ -45,8 +45,7 @@ class NewsSearchListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: _buildList(),
-    );
+    Size size = MediaQuery.of(context).size;
+    return _buildList();
   }
 }

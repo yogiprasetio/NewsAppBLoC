@@ -13,5 +13,5 @@ void init() {
   locator.registerLazySingleton<NewsRepository>(
       () => NewsRepositoryImpl(remoteDataSource: locator()));
   locator.registerLazySingleton<NewsRemoteDataSource>(
-      () => NewsRemoteDataSourceImpl(client: locator()));
+      () => NewsRemoteDataSourceImpl());
 }

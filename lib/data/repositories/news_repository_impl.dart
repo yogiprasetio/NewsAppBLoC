@@ -9,7 +9,7 @@ import 'package:online_class/domain/repositories/news_repositories.dart';
 import '../../common/exception.dart';
 
 class NewsRepositoryImpl implements NewsRepository {
-  final NewsRemoteDataSourceImpl remoteDataSource;
+  final NewsRemoteDataSource remoteDataSource;
 
   NewsRepositoryImpl({required this.remoteDataSource});
 

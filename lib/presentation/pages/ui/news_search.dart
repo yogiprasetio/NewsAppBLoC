@@ -16,7 +16,7 @@ class _NewsSearchScreenState extends State<NewsSearchScreen> {
     return Scaffold(
         appBar: AppBar(title: const Text('SearchArticle')),
         body: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -34,7 +34,7 @@ class _NewsSearchScreenState extends State<NewsSearchScreen> {
                 height: 16,
               ),
               const Text('Search Reasult'),
-              NewsSearchListPage(),
+              const NewsSearchListPage(),
             ],
           ),
         ));
