@@ -47,6 +47,11 @@ dependencies:
   dartz: ^0.10.1
   rxdart: ^0.27.7
   get_it: ^7.2.0
+  image_picker: ^0.8.6
+  camera: ^0.10.0+5
+  gallery_saver: ^2.3.2
+  awesome_snackbar_content: ^0.1.0
+
 
 
 dev_dependencies:

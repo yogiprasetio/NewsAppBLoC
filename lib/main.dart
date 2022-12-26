@@ -42,8 +42,9 @@ class MyApp extends StatelessWidget {
                       shape: const RoundedRectangleBorder(
                           borderRadius:
                               BorderRadius.all(Radius.circular(8)))))),
-          initialRoute: NewsSearchScreen.routeName,
+          initialRoute: LoadImageScreen.routeName,
           routes: {
+            LoadImageScreen.routeName: (context) => LoadImageScreen(),
             NewsSearchScreen.routeName: (context) => const NewsSearchScreen(),
             ArticlePage.routeName: (context) => const ArticlePage(),
             DetailArticlePage.routeName: (context) => DetailArticlePage(

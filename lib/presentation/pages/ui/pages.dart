@@ -1,5 +1,10 @@
+import 'dart:io';
 import 'dart:math';
+import 'package:awesome_snackbar_content/awesome_snackbar_content.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:gallery_saver/gallery_saver.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -9,6 +14,8 @@ import 'package:online_class/shared/shared.dart';
 import 'package:provider/provider.dart';
 import 'package:supercharged/supercharged.dart';
 import 'package:webview_flutter/webview_flutter.dart';
+import 'package:path/path.dart' as path;
+import 'package:path_provider/path_provider.dart' as pPath;
 
 import '../../../data/api/api_services.dart';
 import '../../../data/models/models.dart';
@@ -27,3 +34,4 @@ part 'web_view_detail.dart';
 part 'news_list_page.dart';
 part 'news_search.dart';
 part 'news_search_list_page.dart';
+part 'load_image_screen.dart';
